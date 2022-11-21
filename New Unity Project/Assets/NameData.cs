@@ -10,13 +10,13 @@ public class NameData
     [BsonRepresentation(BsonType.ObjectId)] public ObjectId _id { get; set; }
     
     
-    [BsonElement("UserName")]
+    [BsonElement("Name")]
     public string Name { get; set; }
     
-    [BsonElement("Email")]
+    [BsonElement("Age")]
     public string Idade { get; set; }
 
-    public NameData(string name, string age, string password, int coinsWallet)
+    public NameData(string name, string age)
     {
         this.Name = name;
         this.Idade = age;
