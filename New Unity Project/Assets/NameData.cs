@@ -3,6 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 public class NameData
 {
+    //Documento Bson variáveis que serão guardadas no banco de dados
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)] public ObjectId _id { get; set; }
     
